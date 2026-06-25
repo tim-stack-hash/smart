@@ -1,1 +1,0 @@
-async function o(e){const t=await fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(e)});if(!t.ok){const a=await t.text().catch(()=>"");throw new Error(a||`Failed to send lead: ${t.status}`)}}export{o as sendLeadToServer};
