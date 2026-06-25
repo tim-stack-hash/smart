@@ -1,0 +1,22 @@
+Скопируй и выполни ЭТОТ БЛОК команд (один-в-один) — чтобы собрать и выложить на GitHub Pages.
+
+1) Убедись что ты в корне проекта:
+cd "c:/Users/User/OneDrive/Документы/smart-start-educational-center-hub"
+
+2) Собрать production:
+npm run build
+
+3) Залить build в docs (удалит текущее содержимое docs и заменит):
+rmdir /s /q docs
+mkdir docs
+xcopy /E /I dist\* docs\ /Y
+
+4) Зафиксировать и отправить в gh-pages:
+git checkout gh-pages
+git add -A
+git commit -m "deploy: build to gh-pages" 
+git push -u origin gh-pages
+
+Если commit ругнётся (ничего не изменилось), то сделай только:
+git push -u origin gh-pages
+
