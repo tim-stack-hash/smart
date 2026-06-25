@@ -1,0 +1,6 @@
+{
+  "name": "Smart Start Educational Center Hub",
+  "description": "An interactive, beautiful landing page for an educational center (Math, English, Pochemuchka) featuring Redux Toolkit state, custom calculations, and a complete ready-to-copy PRD & prompt generator for Copilot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
